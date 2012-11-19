@@ -31,7 +31,6 @@ background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-
 	border-bottom: .5em solid #FF8000;
 	text-align: left;
 	padding-bottom: 0.5em;
@@ -60,6 +59,8 @@ nav ul li
 nav ul li a
 {
 	font-family: 'Strait', sans-serif;
+	text-shadow: 2px 2px 2px #000;
+        filter: dropshadow(color=#000, offx=2, offy=2);
 }
 
 nav ul li a:hover
