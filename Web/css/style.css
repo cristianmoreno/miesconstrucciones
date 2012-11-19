@@ -76,9 +76,9 @@ footer
 
 #galeriaquery
 {
-	background: #F5F6CE;
+	background-image: url(../img/fondogaleria.jpg);
 	display: block;
-	height: 22em;
+	min-height: 22em;
 	
 }
 
