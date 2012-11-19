@@ -9,7 +9,7 @@ font-family: 'Strait', sans-serif;
 {
 	font-family: 'Quicksand', sans-serif;
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	text-decoration: none;
 }
 
@@ -24,9 +24,7 @@ img, video, object { max-width:100%; }
 header
 {
 	background: #333;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	width: 100%;
+	text-align: left;
 }
 
 nav
@@ -35,6 +33,7 @@ nav
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
+	margin-left: 7em;
 }
 
 nav li
@@ -77,8 +76,6 @@ footer
 #galeriaquery
 {
 	background-image: url(../img/fondogaleria.jpg);
-	display: block;
-	min-height: 22em;
 	
 }
 
@@ -89,9 +86,9 @@ footer
 
 #logo
 {
-	left: 1.5em;
-	position: absolute;
-	top: 0;
+	margin-left: 1.2em;
+	/*position: absolute;
+	top: 0;*/
 	vertical-align: middle;
 	width: 25%;
 }
