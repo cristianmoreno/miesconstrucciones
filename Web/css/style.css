@@ -73,6 +73,12 @@ footer
 	height: 22em;
 }
 
+a.activo
+{
+	color: #FF8000;
+	border-bottom: .3em solid #FF8000;
+}
+
 #galeriaquery
 {
 	background-image: url(../img/fondogaleria.jpg);
