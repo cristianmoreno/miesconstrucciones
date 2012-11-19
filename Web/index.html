@@ -89,60 +89,74 @@
 	</section>
 	<footer>Pie de Página</footer>
 		
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
-		<script type="text/javascript">
-			$(function() {
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+<script type="text/javascript">
+
+function slidePlay(slideObject)
+	{
+		setTimeout(function()
+		{
+			slideObject.play();
+
+		}, 5000);
+	}
+$(function() {
+	
+	var Page = (function() {
+
+		var $navArrows = $( '#nav-arrows' ).hide(),
+			$shadow = $( '#shadow' ).hide(),
+			slicebox = $( '#sb-slider' ).slicebox( {
+				onReady : function() {
+
+					$navArrows.show();
+					$shadow.show();
+					slidePlay(slicebox);
+				},
+				orientation : 'r',
+				cuboidsRandom : true,
+				disperseFactor : 30,
+				interval: 5000
+
+			} ),
+			
+			init = function() {
+
+				initEvents();
 				
-				var Page = (function() {
+			},
+			initEvents = function() {
 
-					var $navArrows = $( '#nav-arrows' ).hide(),
-						$shadow = $( '#shadow' ).hide(),
-						slicebox = $( '#sb-slider' ).slicebox( {
-							onReady : function() {
+				// add navigation events
+				$navArrows.children( ':first' ).on( 'click', function() {
 
-								$navArrows.show();
-								$shadow.show();
-								slicebox.play();
+					slicebox.next();
+					slicebox.pause();
+					slidePlay(slicebox);
+					return false;
 
-							},
-							orientation : 'r',
-							cuboidsRandom : true,
-							disperseFactor : 30
-						} ),
-						
-						init = function() {
+				} );
 
-							initEvents();
-							
-						},
-						initEvents = function() {
+				$navArrows.children( ':last' ).on( 'click', function() {
+					
+					slicebox.previous();
+					slicebox.pause();
+					slidePlay(slicebox);
+					return false;
 
-							// add navigation events
-							$navArrows.children( ':first' ).on( 'click', function() {
+				} );
 
-								slicebox.next();
-								return false;
+			};
 
-							} );
+			return { init : init };
 
-							$navArrows.children( ':last' ).on( 'click', function() {
-								
-								slicebox.previous();
-								return false;
+	})();
 
-							} );
+	Page.init();
 
-						};
+});
 
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-			});
-
-		</script>
+</script>
 </body>
 </html>
