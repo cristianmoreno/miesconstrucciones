@@ -59,14 +59,14 @@ nav ul li
 nav ul li a
 {
 	font-family: 'Strait', sans-serif;
-	text-shadow: 2px 2px 2px #000;
-        filter: dropshadow(color=#000, offx=2, offy=2);
 }
 
 nav ul li a:hover
 {
 	color: #FF8000;
 	border-bottom: .3em solid #FF8000;
+	text-shadow: 2px 2px 2px #000;
+    filter: dropshadow(color=#000, offx=2, offy=2);
 }
 nav ul li a:link
 {
@@ -88,6 +88,34 @@ a.activo
 {
 	color: #FF8000;
 	border-bottom: .3em solid #FF8000;
+	text-shadow: 2px 2px 2px #000;
+    filter: dropshadow(color=#000, offx=2, offy=2);
+}
+
+#ini:before
+{
+	content: url(../img/home.png);
+	display: block;
+}
+#who:before
+{
+	content: url(../img/notepad.png);
+	display: block;
+}
+#con:before
+{
+	content: url(../img/gear.png);
+	display: block;
+}
+#gal:before
+{
+	content: url(../img/gallery.png);
+	display: block;
+}
+#ctc:before
+{
+	content: url(../img/contact.png);
+	display: block;
 }
 
 #galeriaquery
