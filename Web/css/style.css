@@ -58,7 +58,7 @@ nav ul li a
 nav ul li a:hover
 {
 	color: #FF8000;
-	border-bottom: .3em solid #FF8000;
+	border-bottom: .2em solid #FF8000;
 }
 nav ul li a:link
 {
@@ -69,6 +69,37 @@ nav ul li a:visited
 {
 	color: #fff;
 }
+
+/* Submenu */
+
+nav li#gal ul
+{
+	background: #222;
+	display: none;
+	position: absolute;
+	min-width: 2em;
+	height: auto;
+	padding: .5em;
+	opacity: .9;
+	z-index: 999;
+	-webkit-box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+nav li#gal ul li
+{
+	display: block;
+	text-align: left;
+}
+
+nav li#gal:hover >ul
+{
+	display: block;
+
+}
+
+/* termina submenú */
 
 footer
 {
@@ -206,38 +237,6 @@ a.tooltip span b {
 	display: block;
 }
 
-/* Submenu */
-
-nav li#gal ul
-{
-	background: #222;
-	display: none;
-	position: absolute;
-	min-width: 2em;
-	height: auto;
-	padding: .5em;
-	opacity: .9;
-	z-index: 999;
-	-webkit-box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.3);
-    box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.3);
-
-}
-
-nav li#gal ul li
-{
-	display: block;
-	text-align: left;
-	-webkit-transition: all 2s ease-in;
-		-moz-transition: all 2s ease-in;
-        -ms-transition: all 2s ease-in;
-        -o-transition: all 2s ease-in;
-		transition: all 2s ease-in;
-}
-
-nav li#gal:hover >ul
-{
-	display: block;
-}
 
 #galeriaquery
 {
@@ -262,7 +261,6 @@ nav li#gal:hover >ul
 #multimedia
 {
 	background: #fff;
-	background-image: url(../img/fondo2.png);
 	border-top: .5em #333 solid;
 	height: 22em;
 }
