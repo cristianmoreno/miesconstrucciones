@@ -45,7 +45,7 @@ nav li
 
 }
 
-nav ul li
+nav > ul li
 {
 	display: inline-block;
 }
@@ -203,6 +203,39 @@ a.tooltip span b {
 #ctc:before
 {
 	content: url(../img/contact.png);
+	display: block;
+}
+
+/* Submenu */
+
+nav li#gal ul
+{
+	background: #222;
+	display: none;
+	position: absolute;
+	min-width: 2em;
+	height: auto;
+	padding: .5em;
+	opacity: .9;
+	z-index: 999;
+	-webkit-box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:  2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+nav li#gal ul li
+{
+	display: block;
+	text-align: left;
+	-webkit-transition: all 2s ease-in;
+		-moz-transition: all 2s ease-in;
+        -ms-transition: all 2s ease-in;
+        -o-transition: all 2s ease-in;
+		transition: all 2s ease-in;
+}
+
+nav li#gal:hover >ul
+{
 	display: block;
 }
 
