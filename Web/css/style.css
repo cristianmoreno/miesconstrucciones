@@ -17,7 +17,7 @@ font-family: 'Strait', sans-serif;
 body
 {
 	text-align: center;
-	background-image: url(../img/fondogaleria.jpg);
+	background-image: url(../img/background.png);
 }
 
 img, video, object { max-width:100%; }
@@ -104,8 +104,11 @@ nav li#gal:hover >ul
 
 footer
 {
-	background: #333;
-	height: 22em;
+	background-image: url(../img/stripe.png);
+	min-height: 8em;
+	-webkit-box-shadow:  0px -2px 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:  0px -2px 2px 1px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
 }
 
     a#tooltip
@@ -261,7 +264,9 @@ a.tooltip span b {
 
 #multimedia
 {
-	height: 22em;
+	min-height: 8em;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 /* formulario de contacto */
@@ -277,7 +282,7 @@ a.tooltip span b {
 }
 .co-boton
 {
-    background: #339BB9;
+    background: #FF8000;
     border: 0;
     color: #fff;
     cursor: pointer;
@@ -285,11 +290,12 @@ a.tooltip span b {
     text-align: center;
     margin-left: 0;
     margin-top: .3em;
+    padding: 0.35em;
 }
 
 .co-boton:hover
 {
-    background: #57A957;
+    background: #222;
 }
 
 .co-input-area
