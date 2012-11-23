@@ -34,7 +34,31 @@
 					</ul>
 				</li>
 
-				<li id="ctc"><a href="contacto.html">Contacto</a></li>
+				<li id="ctc">
+					<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';">Contacto</a>
+					<div id="light" class="white_content">
+						<section id="formulario">
+   <form id="formSend">
+     <label>Envíanos un mensaje a nuestro correo</label>
+     <br>
+     <input type='text' name='nombre' placeholder='Nombre'  required=""  class="co-input"/>
+     <br>
+     <input type='text' name='mail' placeholder='correo@tucorreo.com'  required="" class="co-input"/>
+     <br>
+     <input type='tel' name='usrtel' placeholder='Teléfono' class="co-input"/>
+     <br>
+     <input type='text' name='asunto' placeholder='Asunto' class="co-input"/>
+     <br>
+     <textarea name="mensaje" rows="3" cols="35" placeholder='Escribe aquí tu mensaje' required="" class="co-input-area" /></textarea>
+     <br>
+     <input type="submit" value="Enviar" class="co-boton"/><div id="sendM"><img src="img/loading.gif"></div>
+ </form>
+</section>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">CERRAR</a>
+          </div>
+      </section>
+    </section>
+    </li>
 
 			</ul>
 		</nav>
@@ -97,11 +121,21 @@
 			</div><!-- /wrapper -->
 	</section>
 	<section id="multimedia">
-		<video controls="controls">
-			Tu navegador no es compatible con HTML5
-		</video>
+	    <div class="bloqueV">
+	    	<video controls="controls">
+	    		Tu navegador no es compatible con HTML5
+	    	</video>
+	    	<video controls="controls">
+	    		Tu navegador no es compatible con HTML5
+	    	</video>
+	    	<video controls="controls">
+	    		Tu navegador no es compatible con HTML5
+	    	</video>
+	    </div>
 	</section>
-	<footer>Pie de Página</footer>
+	<footer>
+		
+	</footer>
 
 <script type="text/javascript" src="js/jquery.slicebox.js"></script>
 <script type="text/javascript">

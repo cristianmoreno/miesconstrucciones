@@ -17,6 +17,7 @@ font-family: 'Strait', sans-serif;
 body
 {
 	text-align: center;
+	background-image: url(../img/fondogaleria.jpg);
 }
 
 img, video, object { max-width:100%; }
@@ -240,7 +241,7 @@ a.tooltip span b {
 
 #galeriaquery
 {
-	background-image: url(../img/fondogaleria.jpg);
+	
 	
 }
 
@@ -260,7 +261,115 @@ a.tooltip span b {
 
 #multimedia
 {
-	background: #fff;
-	border-top: .5em #333 solid;
 	height: 22em;
+}
+
+/* formulario de contacto */
+.co-input
+{
+    border: .1em solid #eee;
+    box-shadow: 0;
+    color: #3d465e;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 0;
+    margin-top: .5em;
+    min-width: 10em;
+}
+.co-boton
+{
+    background: #339BB9;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-left: 0;
+    margin-top: .3em;
+}
+
+.co-boton:hover
+{
+    background: #57A957;
+}
+
+.co-input-area
+{
+	border: .1em solid #eee;
+    box-shadow: 0;
+    color: #3d465e;
+    font-family: 'Quicksand', sans-serif;
+    vertical-align: top;
+    margin-left: 0;
+    margin-top: .3em;
+}
+/* TERMINA FORMULARIO */
+/* LightBox */
+.black_overlay{
+    background-color: black;
+    display: none;
+    filter: alpha(opacity=80);
+    height: 100%;
+    left: 0%;
+    opacity:.80;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    z-index:1001;
+    -moz-opacity: 0.8;
+}
+ 
+.white_content {
+	color: #FF8000;
+    background-color: white;
+    border: 0.3em solid #FF8000;
+    box-shadow:  1px 1px 4px 2px rgba(0, 0, 0, 0.3);
+    display: none;
+    height: auto;
+    left: 30%;
+    min-width: 200px; 
+    overflow: auto;
+    padding: 16px;
+    position: absolute;
+    top: 15%;
+    z-index:1002;
+    -webkit-box-shadow:  1px 1px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.white_content > a:link 
+{
+	color: #FF8000;
+}
+.close
+{
+    color: #FF8000;
+    font-size: 1em;
+    margin-left: 19em;
+    margin-top: 8em;
+    position: absolute;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/* Finaliza */
+
+#sendM
+{
+	visibility: hidden;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+
+#formulario
+{
+	font-family: 'Quicksand', sans-serif; 
+	font-size: 1.2em;
+    text-align: left;
+}
+
+.bloqueV
+{
+	display: inline-block;
+	width: 100%;
 }
