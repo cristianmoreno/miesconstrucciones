@@ -104,11 +104,28 @@ nav li#gal:hover >ul
 
 footer
 {
+	color: #fff;
+	padding: 0.3em;
 	background-image: url(../img/stripe.png);
-	min-height: 8em;
+	min-height: 2em;
 	-webkit-box-shadow:  0px -2px 2px 1px rgba(0, 0, 0, 0.3);
     box-shadow:  0px -2px 2px 1px rgba(0, 0, 0, 0.3);
-    opacity: 0.5;
+    opacity: 0.9;
+}
+
+footer a:link
+{
+	color: #FF8000;
+}
+
+footer a:visited
+{
+	color: #FF8000;
+}
+
+footer a:hover
+{
+	color: #FFF;
 }
 
     a#tooltip
@@ -265,8 +282,8 @@ a.tooltip span b {
 #multimedia
 {
 	min-height: 8em;
-	padding-bottom: 1em;
-	padding-top: 1em;
+	padding-bottom: 2.5em;
+	padding-top: 2em;
 }
 
 /* formulario de contacto */
@@ -381,4 +398,23 @@ a.tooltip span b {
 {
 	display: inline-block;
 	width: 100%;
+}
+
+#InfoContacto
+{
+	border-top: 0.3em solid #222;
+	color: #FFF;
+	font-family: 'Strait', sans-serif;
+	font-size: 0.9em;
+	background: #FF8000;
+	height: auto;
+	text-align: center;
+	padding: 1em;
+-webkit-box-shadow: inset 3px 2px 80px 3px #FE9A2E;
+        
+        box-shadow: inset 3px 2px 80px 3px #FE9A2E;
+        -webkit-box-shadow:  -1px -1px 1px 1px rgba(0, 0, 0, 0.1);
+        
+        box-shadow:  -1px -1px 1px 1px rgba(0, 0, 0, 0.1);
+
 }
