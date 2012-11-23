@@ -30,13 +30,13 @@ function spamcheck($field)
     {//Enviar email
       try
       {
-         $mensaje="Contacto Lápiz y Pixel";
+         $mensaje="Contacto M&ES Construcciones";
          $mensaje.= "\nNombre: ". $_POST['nombre'];
          $mensaje.= "\nEmail: ".$_POST['mail'];
          if(isset($_POST['usrtel']))
             $mensaje.= "\nTeléfono: ".$_POST['usrtel'];
          $mensaje.= "\nMensaje: \n".$_POST['mensaje'];
-         $destino= "servicios@miesconstrucciones.com";
+         $destino= "lapizpixel@gmail.com";
          $remitente = $_POST['mail'];
          if(isset($_POST['asunto']))
             $asunto = $_POST['asunto'];
