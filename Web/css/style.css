@@ -296,7 +296,7 @@ a.tooltip span b {
     margin-left: 0;
     margin-top: .5em;
     min-width: 10em;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .co-boton
 {
@@ -309,7 +309,7 @@ a.tooltip span b {
     margin-left: 0;
     margin-top: .3em;
     padding: 0.35em;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .co-boton:hover
@@ -326,7 +326,7 @@ a.tooltip span b {
     vertical-align: top;
     margin-left: 0;
     margin-top: .3em;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 /* TERMINA FORMULARIO */
 /* LightBox */
@@ -390,7 +390,7 @@ a.tooltip span b {
 #formulario
 {
 	font-family: 'Quicksand', sans-serif; 
-	font-size: 1.2em;
+	font-size: 1em;
     text-align: left;
 }
 

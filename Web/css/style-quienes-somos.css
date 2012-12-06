@@ -1,0 +1,21 @@
+.articulos
+{
+	padding: 2em;
+	text-align: justify;
+	width: 95%;
+}
+
+.articulos dt
+{
+	font-weight: 700;
+}
+
+.articulos dd
+{
+	margin-left: 1.5em;
+}
+
+#lista 
+{
+	margin-left: 1.5em;
+}
