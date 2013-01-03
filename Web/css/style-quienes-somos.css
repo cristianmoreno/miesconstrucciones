@@ -1,21 +1,87 @@
-.articulos
+body
 {
-	padding: 2em;
-	text-align: justify;
-	width: 95%;
+	text-align: center;
+}
+#mision, #vision
+{
+	background: #FF8000;
+	min-width: 4em;
+	max-width: 15em;
+	min-height: 1em;
+	padding: 1em;
+	margin-top: 2em;
+	margin-left: 2em;
+	-webkit-transition: all 2s ease-out;
+		-moz-transition: all 2s ease-out;
+        -ms-transition: all 2s ease-out;
+        -o-transition: all 2s ease-out;
+		transition: all 2s ease-out;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 2em;
 }
 
-.articulos dt
+#mision:hover, #vision:hover, #portafolio:hover
+{
+	background: #FACC2E;
+	-moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(-20px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-20px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(-20px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(-20px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(0deg) translateX(0px) translateY(-20px) skewX(0deg) skewY(0deg);
+        -webkit-transition: all 1s ease-in;
+		-moz-transition: all 1s ease-in;
+        -ms-transition: all 1s ease-in;
+        -o-transition: all 1s ease-in;
+		transition: all 1s ease-in;
+}
+
+#mision dt, #vision dt, #portafolio dt
 {
 	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+#mision dd, #vision dd, #portafolio dd
+{
+	text-align: left;
+	color: #fff;
+	margin-top: .5em;
+	line-height: 1.5em;
 }
 
-.articulos dd
+#vision
 {
-	margin-left: 1.5em;
+	background: #2E9AFE;
+}
+#vision:hover
+{
+	background: #81BEF7;
 }
 
-#lista 
+#portafolio
 {
-	margin-left: 1.5em;
+	background: #444;
+	max-width: 50%;
+	padding: 1em;
+	margin-left: 25%;
+	margin-bottom: 2em;
+	-webkit-transition: all 2s ease-out;
+		-moz-transition: all 2s ease-out;
+        -ms-transition: all 2s ease-out;
+        -o-transition: all 2s ease-out;
+		transition: all 2s ease-out;
+}
+
+#portafolio:hover
+{
+	background: #222;
+}
+
+#portafolio #lista
+{
+	color: #fff;
+	list-style: square;
+	text-align: left;
+	margin-left: 1em;
 }
